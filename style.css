@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Roboto';
+    list-style: none;
+}
+.hover{
+    cursor: pointer;
+}
+
+@media(min-width:350px){
+    /* header */
+    .header{
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header h3{
+        height: 1.5rem;
+    }
+
+    .header .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header i{
+        padding: 0 0.5rem; 
+    }
+
+    /* profile */
+    .profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding:0.4rem 0.8rem;
+    }
+    .profile_img img{
+        border-radius: 50%;
+        height: 6rem;
+        width: 6rem;
+    }
+    .data{
+        text-align: center;
+    }
+
+
+    /* About */
+    .about{
+        padding: 0.4rem 0.8rem;
+    }
+    .about i{
+        display: flex;
+        padding: 0.5rem 0rem;
+    }
+
+    .about i p{
+        margin-left: 0.5rem;
+        font-weight: 350;
+    }
+    .about span{
+        font-weight: 350;
+        color: lightgray;
+        line-height: 1.5rem;
+    }
+    
+    .about h4{
+        font-weight:bold;
+    }
+
+    /* buttons */
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.8rem 0rem;
+    }
+    #edit, #share{
+        width: 40%;
+        height: 2.3rem;
+    }
+    button{
+        background-color:#353535;
+        border: none;
+        color: white;
+        border-radius: 8px;
+    }
+
+
+    /* Highlights*/
+    .highlights{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        overflow-x:scroll;
+        overflow-y: none;
+        scrollbar-width: none;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .high{
+        padding: 0rem 0.4rem;
+    }
+    .high img{
+        border-radius: 50%;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .image{
+        height: 4rem;
+        width: 4rem;
+        border-radius:50%;
+        border:5px solid #353535;
+        padding: 0.2rem;
+    }
+
+    .high p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding: 0.4rem 0rem;
+    }
+
+    /* selectors */
+    .selectors{
+        /* display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top:1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .posts_selector{
+        background-color: #353535;
+    }
+
+    .posts_selector, .reel_selector{
+        padding: 0.2rem 0rem 0.1rem;
+    }
+
+    .selectors img{
+        height: 2rem;
+    }
+    
+    /* posts */
+    .posts{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 0.2rem;
+    }
+
+    .posts img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .reels{
+        display: none;
+        grid-template-columns: repeat(3,1fr);
+        gap: 0.2rem;
+    }
+
+    .reels img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+@media(min-width:850px){
+    .header{
+        height: 8vh;
+    }
+    .profile_name{
+        font-size: 2rem;
+    }
+
+    .header i{
+        font-size: 1.5rem;
+    }
+
+    .left, .right{
+        height: 7vh;
+    }
+
+    .header .right i{
+        padding: 1.5rem 2rem;
+    }
+
+    .header .left i{
+        margin-top: 1rem;
+    }   
+
+    .profile{
+        margin: 1rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .data{
+        padding-left: 10rem;
+    }
+
+    .data h4{
+        font-size: 1.5rem;
+    }
+    .data em{
+        font-size: 1.2rem;
+    }
+    
+    .profile_img img{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    #edit, #share{
+        width: 30%;
+    }
+    
+
+    .highlights{
+        margin: 1rem 0rem;
+    }
+    .highlights .high{
+        padding-right: 2rem;
+    }
+    .posts,.reels{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
